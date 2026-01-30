@@ -9,11 +9,6 @@ from upet.calculator import UPETCalculator
 from mlip_arena.models.utils import get_freer_device
 
 
-
-with open(Path(__file__).parents[1] / "registry.yaml", encoding="utf-8") as f:
-    REGISTRY = yaml.safe_load(f)
-
-
 class PET_OAM_XL(UPETCalculator):
     def __init__(
         self,
